@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/calculator.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="txtInput"></div>
+        <div class="operators">
+        <button class="btn btnOp btnPlus" onclick="show(this)" data-value="+">+</button>
+        <button class="btn btnOp btnMinus" onclick="show(this)" data-value="-">-</button>
+        <button class="btn btnOp btnMulti" onclick="show(this)" data-value="*">x</button>
+        <button class="btn btnOp btndDevision" onclick="show(this)" data-value="/">÷</button>
+        </div>
+        <div class="numbers">
+        <button class="btn btnNum btn7" onclick="show(this)" data-value="7">7</button>
+        <button class="btn btnNum btn8" onclick="show(this)" data-value="8">8</button>
+        <button class="btn btnNum btn9" onclick="show(this)" data-value="9">9</button>
+        </div>
+        <div class="numbers">
+        <button class="btn btnNum btn4" onclick="show(this)" data-value="4">4</button>
+        <button class="btn btnNum btn5" onclick="show(this)" data-value="5">5</button>
+        <button class="btn btnNum btn6" onclick="show(this)" data-value="6">6</button>
+        </div>
+        <div class="numbers">
+        <button class="btn btnNum btn1" onclick="show(this)" data-value="1">1</button>
+        <button class="btn btnNum btn2" onclick="show(this)" data-value="2">2</button>
+        <button class="btn btnNum btn3" onclick="show(this)" data-value="3">3</button>
+        </div>
+        <div class="numbers">
+        <button class="btn btnNum btn0" onclick="show(this)" data-value="0">0</button>
+        <button class="btn btnNum btnDot" onclick="show(this)" data-value=".">.</button>
+        <button class="btn btnNum btnC" id="reset">C</button>
+        </div>
+        <button class="btn btnEqual" onclick="result()">=</button>
+    </div>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
